@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Parallax Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+	<div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 id="rayceita">RAYceitas</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">As melhores receitas em um único lugar</h5>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+<nav id="umai">
+    <div class="nav-wrapper">
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <a class="waves-effect waves-light btn modal-trigger" id="cad" href="#modal1">Cadastrar</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">Nome</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Sobrenome</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate">
+          <label for="password">Senha</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+    </form>
+  </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">cadastrar</a>
+    </div>
+  </div>
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Receitas</a></li>
+      </ul>
+    </div>
+  </nav>
+  <img id="hh" class="materialboxed" width="650" src="Pudim.jpg">
+  <div id="tes1" class="row">
+        <div id="tex" class="col s12 center"><p><h4>Ingredientes</h4>
+        	6 colheres de sopa de açúcar <br>
+        	Uma lata de leite condensado<br>
+        	Uma lata de leite (a mesma medida da lata de leite condensado)<br>
+        	3 ovos<br>
+
+        	<h4>Modo de Preparo</h4>
+        	Numa fôrma para pudim (de 20 centímetros de diâmetro) coloque 6 colheres de sopa de açúcar e leve ao fogo médio até virar uma calda caramelada (por mais ou menos 3 minutos). Retire do fogo e vá virando a fôrma, de modo que a calda forre todo o fundo e lateral da mesma. Reserve.
+        Num liquidificador coloque uma lata de leite condensado, uma lata de leite (a mesma medida da lata de leite condensado) e 3 ovos e bata bem (por mais ou menos 1 minuto). Desligue o liquidificador e deixe a mistura descansar por 15 minutos (com esta espera a espuma fica sobre a superfície, o pudim fica sem furinhos, mas macio).
+    Com a ajuda de uma colher segure a espuma que está na superfície e despeje o conteúdo do liquidificador, com cuidado, na fôrma caramelada (reservada acima) e leve ao forno médio, em banho-maria, a 180 graus por uma hora e meia. Retire do forno, deixe esfriar e leve à geladeira por mais ou menos duas horas. Desenforme e sirva em seguida</p></div></div>
+    <br id="ud">
+</body>
+          <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Gostou do nosso site?</h5>
+                <p class="grey-text text-lighten-4">Tudas as delicias do mundo na palma da sua mão</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Contatos</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Linkedin</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">twitter</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © Matheus Henrique da R. Costa>
+            </div>
+          </div>
+        </footer>
+<!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script type="text/javascript">
+     $('.pushpin-demo-nav').each(function() {
+    var $this = $(this);
+    var $target = $('#' + $(this).attr('data-target'));
+    $this.pushpin({
+      top: $target.offset().top,
+      bottom: $target.offset().top + $target.outerHeight() - $this.height()
+    });
+  });
+     document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+         
+  </script>
+
+  </body>
+</html>
